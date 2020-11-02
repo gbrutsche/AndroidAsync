@@ -33,8 +33,8 @@ android {
         targetCompatibility 1.8
     }
 
-    compileSdkVersion project.hasProperty('global_compileSdkVersion') ? global_compileSdkVersion : 28
-    buildToolsVersion project.hasProperty('global_buildToolsVersion') ? global_buildToolsVersion : '28.0.3'
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
 
     dependencies {
         // this is only necessary to get compilation working for self signed certificates. dependency isn't added.

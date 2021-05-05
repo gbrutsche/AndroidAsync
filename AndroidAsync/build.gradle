@@ -44,7 +44,7 @@ android {
 
         testImplementation "junit:junit:$rootProject.ext.jUnitVersion"
         androidTestImplementation "androidx.test:runner:$rootProject.ext.androidXSupportTestVersion"
-        androidTestImplementation "androidx.test:espresso-core:$rootProject.ext.androidXSupportTestEspressoVersion"
+        androidTestImplementation "androidx.test.espresso:espresso-core:$rootProject.ext.androidXSupportTestEspressoVersion"
         // for when i wanna test this against gms conscrypt
         androidTestImplementation "com.google.android.gms:play-services-base:$rootProject.ext.playServicesCoreVersion"
     }
